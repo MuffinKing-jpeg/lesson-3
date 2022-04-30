@@ -26,17 +26,46 @@
 
 body {
     background-color: var(--bg-primary);
+    margin: 0;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
+.bgr {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/bgr.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -10;
+    filter: opacity(0.2) hue-rotate(65deg);
+}
+
+.bgr-gallery {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/stonebrick.png");
+    z-index: -10;
+    filter: opacity(0.2);
+}
+
 main {
     max-width: var(--vievport-max-width);
     min-width: 200px;
-    width: 80vw;
-    margin: 50px var(--pad-size) 40px;
+    width: 100vw;
+    margin: 55px var(--pad-size) 40px;
     min-height: 75vh;
+    padding: 20px;
 }
 
 .main-grid {
@@ -165,7 +194,17 @@ nav ul {
 
 .gallery-img {
     width: 100%;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    transition: border-color var(--transition-speed);
 }
+
+.gallery-grid-item:hover .gallery-img {
+    border-color: transparent;
+}
+
+
 
 .gallery-img-description {
     display: flex;
@@ -252,6 +291,25 @@ nav ul {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
+}
+
+.catalog-wrapper ul {
+    font-size: 1.5rem;
+    list-style-image: url("../img/thinking16x16.png");
+}
+
+.catalog-wrapper li ul {
+    list-style-image: url("../img/duck16x16.png");
+    font-size: 1rem;
+}
+
+.new::after {
+    content: "NEW!";
+    background-color: var(--ico);
+    margin: 0 10px;
+    color: var(--text-secondary);
+    padding: 0 5px;
+    font-weight: bold;
 }
 
 input,
@@ -348,6 +406,7 @@ fieldset {
         display: none;
         z-index: 1;
         bottom: 0;
+        left: 0;
         transform: translateY(100%);
         width: 100%;
     }
