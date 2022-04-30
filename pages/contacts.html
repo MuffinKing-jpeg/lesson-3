@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework #2</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95012a2d1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropdown-btn">
+                <i class="fa-solid fa-angles-down"></i>
+            </button>
+            <nav class="width-wrapper dropdown-content">
+                <ul>
+                    <li><a href="../">главная</a></li>
+                    <li><a href="./articles.html">новости</a></li>
+                    <li><a href="./catalog.html">каталог</a></li>
+                    <li><a href="./gallery.html">галарея</a></li>
+                    <li><a href="./contacts.html">про нас</a></li>
+                    <li><a href="./page-nav.html">чтиво</a></li>
+                    <li><a href="./registration.html">регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="title">Контакты</h1>
+        <div class="contacts-container">
+            <h2 class="contacts-name">Адресс</h2>
+            <p class="contacts-adress">
+                Chem. de Blandonnet 8, 1214 Vernier <br>
+                Женева, Швейцария
+            </p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.9595929018515!2d6.0928517316918755!3d46.22080252045266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64e01385af9d%3A0x590116f760b1c67e!2sISO!5e0!3m2!1sen!2snl!4v1650543571784!5m2!1sen!2snl"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="map-frame">
+        </iframe>
+        <div class="contacts-container">
+            <h2 class="contacts-name">Обратная связь</h2>
+        </div>
+        <form class="contacts-form" action="https://tests.fomenko.top/echo/index.php" method="post">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input id="name" name="name" type="text" placeholder="Введите имя" autofocus="">
+            </div>
+            <div class="form-group">
+                <label for="phone">Контактный телефон:</label>
+                <input id="phone" name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}" placeholder="380-XXXXX-XXXX">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Ваш e-mail">
+            </div>
+            <div class="form-group">
+                <label for="txt">Вопрос:</label>
+                <textarea class="contacts-form-textarea" id="txt" name="question" cols="40" rows="7"
+                    placeholder="Задайте вопрос" spellcheck="false"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="submit-btn" type="submit">Отправить</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="width-wrapper">
+            <a href="https://github.com/MuffinKing-jpeg">© Andrii Dobrus</a><span>&nbsp;All rights not reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>
