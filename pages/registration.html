@@ -2,160 +2,159 @@
 <html lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework #2</title>
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/95012a2d1e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework #2</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/95012a2d1e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <div class="bgr"></div>
-    <header>
-        <div class="dropdown">
-            <button class="dropdown-btn">
-                <i class="fa-solid fa-angles-down"></i>
-            </button>
-            <nav class="width-wrapper dropdown-content">
-                <ul>
-                    <li><a href="../">главная</a></li>
-                    <li><a href="./articles.html">новости</a></li>
-                    <li><a href="./catalog.html">каталог</a></li>
-                    <li><a href="./gallery.html">галарея</a></li>
-                    <li><a href="./contacts.html">про нас</a></li>
-                    <li><a href="./page-nav.html">чтиво</a></li>
-                    <li><a href="./registration.html">регистрация</a></li>
-                </ul>
-            </nav>
+  <div class="bgr"></div>
+  <header>
+    <div class="dropdown">
+      <button class="dropdown-btn">
+        <i class="fa-solid fa-angles-down"></i>
+      </button>
+      <nav class="width-wrapper dropdown-content">
+        <ul>
+          <li><a href="../">главная</a></li>
+          <li><a href="./articles.html">новости</a></li>
+          <li><a href="./catalog.html">каталог</a></li>
+          <li><a href="./gallery.html">галарея</a></li>
+          <li><a href="./contacts.html">про нас</a></li>
+          <li><a href="./page-nav.html">чтиво</a></li>
+          <li><a href="./registration.html">регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="title">регистрация</h1>
+    <form action="https://tests.fomenko.top/echo/index.php" method="post">
+      <fieldset>
+        <legend><i class="fa-solid fa-user"></i></legend>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input id="email" name="email" placeholder="Email" type="email">
         </div>
-    </header>
-
-    <main>
-        <h1 class="title">регистрация</h1>
-        <form action="https://tests.fomenko.top/echo/index.php" method="post">
-            <fieldset>
-                <legend><i class="fa-solid fa-user"></i></legend>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input id="email" name="email" placeholder="Email" type="email">
-                </div>
-                <div class="form-group">
-                    <label for="password">Пароль: </label>
-                    <input id="password" name="passw" minlength="5" maxlength="10" placeholder="Пароль" type="password">
-                </div>
-                <div class="form-group">
-                    <label for="age">Возраст:</label>
-                    <input id="age" name="age" min="13" max="99" value="34" placeholder="Возраст" type="number">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Телефон:</label>
-                    <input id="phone" name="phone" placeholder="Телефон" type="tel">
-                </div>
-                <div class="form-group">
-                    <label for="date">Год рождения:</label>
-                    <input id="date" name="date" type="date">
-                </div>
-                <div class="form-group">
-                    <label for="file">Ваша аватарка:</label>
-                    <input id="file" name="file" type="file">
-                </div>
-            </fieldset>
-
-            <fieldset class="checkbox">
-                <legend><i class="fa-solid fa-gamepad"></i></legend>
-                <p>Предпочитаемые жанры игр:</p>
-                <div class="form-group-sm">
-                    <input type="checkbox" name="genere" value="rpg" id="rpg">
-                    <label for="rpg">RPG</label>
-                </div>
-                <div class="form-group-sm">
-                    <input type="checkbox" name="genere" value="fps" id="fps">
-                    <label for="fps">FPS</label>
-                </div>
-                <div class="form-group-sm">
-                    <input type="checkbox" name="genere" value="strategy" id="strategy" checked>
-                    <label for="strategy">Strategy</label>
-                </div>
-                <div class="form-group-sm">
-                    <input type="checkbox" name="genere" value="rts" id="rts" checked disabled>
-                    <label for="rts">RTS</label>
-                </div>
-                <div class="form-group-sm">
-                    <input type="checkbox" name="genere" value="moba" id="moba" disabled>
-                    <label for="moba">MOBA</label>
-                </div>
-                <div class="form-group-sm">
-                    <input type="checkbox" name="genere" value="novels" id="novels">
-                    <label for="novels">Новелы</label>
-                </div>
-
-            </fieldset>
-
-            <fieldset class="radio">
-                <p>Укажите ваш пол:</p>
-                <div class="form-group-sm">
-                    <input id="gender-male" type="radio" name="gender" value="male">
-                    <label for="gender-male">Мужской</label>
-                </div>
-                <div class="form-group-sm">
-                    <input id="gender-female" type="radio" name="gender" value="female">
-                    <label for="gender-female">Женский</label>
-                </div>
-                <div class="form-group-sm">
-                    <input id="assault_helicopter" type="radio" name="gender" value="assault_helicopter" checked>
-                    <label for="assault_helicopter">ШТУРМОВОЙ ВЕРТОЛЁТ АПАЧ</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend><i class="fa-solid fa-rocket"></i></legend>
-                <div class="form-group">
-                    <label for="list">Лучший лаунчер?</label>
-                    <select name="list" id="list">
-                        <option selected disabled value="">Выберите лаунчер</option>
-                        <option value="Steam">Steam</option>
-                        <option value="GOG">GOG</option>
-                        <option value="EGS">Epic Game Launcher</option>
-                        <option value="BN">BattleNet</option>
-                        <option value="MG">MyGames...REALY?</option>
-                    </select>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <div class="form-group">
-                    <label for="txt">О себе:</label>
-                    <textarea placeholder="Я..." name="txt" id="txt" cols="20" rows="7"></textarea>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <div class="btn-set">
-                    <div class="form-group">
-                        <button type="submit" class="submit-btn">Отправить</button>
-                    </div>
-                    <div class="form-group">
-                        <button type="reset" class="abort-btn">(╯°□°）╯︵ ┻━┻</button>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" onclick="prompt('ㄟ( ▔, ▔ )ㄏ', '┏ (゜ω゜)=👉');"
-                            class="submit-btn">(+_+)?</button>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-    </main>
-
-    <footer>
-        <div class="width-wrapper">
-            <a href="https://github.com/MuffinKing-jpeg">© Andrii Dobrus</a><span>&nbsp;All rights not reserved</span>
+        <div class="form-group">
+          <label for="password">Пароль: </label>
+          <input id="password" name="passw" minlength="5" maxlength="10" placeholder="Пароль" type="password">
         </div>
-    </footer>
+        <div class="form-group">
+          <label for="age">Возраст:</label>
+          <input id="age" name="age" min="13" max="99" value="34" placeholder="Возраст" type="number">
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон:</label>
+          <input id="phone" name="phone" placeholder="Телефон" type="tel">
+        </div>
+        <div class="form-group">
+          <label for="date">Год рождения:</label>
+          <input id="date" name="date" type="date">
+        </div>
+        <div class="form-group">
+          <label for="file">Ваша аватарка:</label>
+          <input id="file" name="file" type="file">
+        </div>
+      </fieldset>
+
+      <fieldset class="checkbox">
+        <legend><i class="fa-solid fa-gamepad"></i></legend>
+        <p>Предпочитаемые жанры игр:</p>
+        <div class="form-group-sm">
+          <input type="checkbox" name="genere" value="rpg" id="rpg">
+          <label for="rpg">RPG</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="genere" value="fps" id="fps">
+          <label for="fps">FPS</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="genere" value="strategy" id="strategy" checked>
+          <label for="strategy">Strategy</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="genere" value="rts" id="rts" checked disabled>
+          <label for="rts">RTS</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="genere" value="moba" id="moba" disabled>
+          <label for="moba">MOBA</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="genere" value="novels" id="novels">
+          <label for="novels">Новелы</label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="radio">
+        <p>Укажите ваш пол:</p>
+        <div class="form-group-sm">
+          <input id="gender-male" type="radio" name="gender" value="male">
+          <label for="gender-male">Мужской</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="gender-female" type="radio" name="gender" value="female">
+          <label for="gender-female">Женский</label>
+        </div>
+        <div class="form-group-sm">
+          <input id="assault_helicopter" type="radio" name="gender" value="assault_helicopter" checked>
+          <label for="assault_helicopter">ШТУРМОВОЙ ВЕРТОЛЁТ АПАЧ</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend><i class="fa-solid fa-rocket"></i></legend>
+        <div class="form-group">
+          <label for="list">Лучший лаунчер?</label>
+          <select name="list" id="list">
+            <option selected disabled value="">Выберите лаунчер</option>
+            <option value="Steam">Steam</option>
+            <option value="GOG">GOG</option>
+            <option value="EGS">Epic Game Launcher</option>
+            <option value="BN">BattleNet</option>
+            <option value="MG">MyGames...REALY?</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="form-group">
+          <label for="txt">О себе:</label>
+          <textarea placeholder="Я..." name="txt" id="txt" cols="20" rows="7"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="btn-set">
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Отправить</button>
+          </div>
+          <div class="form-group">
+            <button type="reset" class="abort-btn">(╯°□°）╯︵ ┻━┻</button>
+          </div>
+          <div class="form-group">
+            <button type="button" onclick="prompt('ㄟ( ▔, ▔ )ㄏ', '┏ (゜ω゜)=👉');" class="submit-btn">(+_+)?</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <div class="width-wrapper">
+      <a href="https://github.com/MuffinKing-jpeg">© Andrii Dobrus</a><span>&nbsp;All rights not reserved</span>
+    </div>
+  </footer>
 </body>
 
 </html>

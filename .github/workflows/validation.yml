@@ -1,0 +1,22 @@
+name: EditorConfig Checker
+
+on:
+  push:
+    branches:
+      - main
+      - master
+jobs:
+  editorconfig:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: editorconfig-checker/action-editorconfig-checker@main
+      - run: editorconfig-checker
+  html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: Cyb3r-Jak3/html5validator-action@master
+        with:
+          root: /
+          css: true
